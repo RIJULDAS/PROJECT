@@ -1,5 +1,21 @@
 class Fibonacci
 {
-public static void main(Strong arts[]) 
+public static void main(String arts[]) 
 {
- inter firstNumber=0
+ int firstNumber=0;
+ int secondNumber=1;
+ int sum=0;
+ int evenSum=o;
+ while (sum<400000)
+ {
+  sum = firstNumber+secondNumber;
+  firstNumber=secondNumber;
+  secondNumber=sum;
+  if(sum%2==0)
+  {
+   evenSum=evenSum+sum;
+   }
+   }
+   System.out.println(evenSum);
+  }
+}

@@ -1,0 +1,27 @@
+class PrimeNumber
+{
+ public static void main(Stringargs[])
+ {
+  long number=600851475143L;
+  long newNum;
+  for(long i=2;i<=number;i++)
+  {
+   if (number%i==0)
+   {
+     newNUm=i;
+     int counter=0;
+     for (long j=newNum;j>=1;j--)
+     {
+       if(newNum%j==0)
+       {
+         counter++;
+       }
+    }
+      if (counter==2)
+      {
+        System.out.println(newNum);
+      }
+    }
+ }
+ }
+}

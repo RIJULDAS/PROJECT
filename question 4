@@ -1,0 +1,5 @@
+class Palindrome
+{
+  public static void main(Stringargs [])
+  {
+    int product =0

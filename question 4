@@ -2,4 +2,28 @@ class Palindrome
 {
   public static void main(Stringargs [])
   {
-    int product =0
+    int product =0;
+    int max =999;
+    int min=100;
+    for(int first=max; first>=min;first--)
+    {
+    for(int second=max;second>=min;second--)
+    {
+     product=first*second;
+     String number=String.valueOf(product);
+     String opposite="";
+     int size=number.lenght();
+     for(int i=size-1;i>=0;i--)
+     {
+      opposite=opposite+number.charAt(i);
+      }
+      if(number.equals(opposite))
+      {
+       int numb=Integer.parseInt(number);
+       palindrome.add(numb);
+      }
+     }
+    }
+    System.out.println(collections.max(palindrome));
+   }
+   }
